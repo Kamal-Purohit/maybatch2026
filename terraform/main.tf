@@ -1,10 +1,10 @@
-provider "aws" {
-  region = "us-east-1"
-}
+
 
 
 resource "aws_s3_bucket" "abc" {
-    bucket = "jatin12341"
+    bucket = var.bucket_name
 }
 
-
+# resource "aws_s3_bucket" "abc1" {
+#     bucket = "jatin1234112121"
+# }
