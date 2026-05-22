@@ -5,3 +5,18 @@ assignment1: run terraform code and try to store your backend configuration on s
 assignment2: create rds server and print its properties in the output
 assignment3: check the usage of data block and try to implement in your code
 assignment4: check the usage of output file and block
+
+terraform22nd may
+assignment1: create a terraform code for below resources
+modules
+1. ecr(elastic container registry)- docker 
+2. eks(elastic kubernetes services)-- kubernetes
+3. ec2 instance (2) (ubuntu) ---- jenkins and as well as for ansible
+4. vpc
+5. security group
+6. iam role
+
+
+assignment2 (optional)
+create a s3 bucket manually 
+then import the s3 bucket on the terraform state file after importing to confirm add the tags in the s3 bucket using terraform

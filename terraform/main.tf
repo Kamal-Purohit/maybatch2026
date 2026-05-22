@@ -1,23 +1,16 @@
-
-
-
-resource "aws_s3_bucket" "abc" {
-    #count = var.create_s3 ? 1 : 0
-    bucket = var.bucket_name
-    tags = {
-        Name = "test"
-    }
+module "s3bucket" {
+  source      = "./s3bucket"
+  depends_on = [ module.securitygroup ]
+  bucket_name = var.bucket_name
+  
+}
+module "ec2" {
+  source = "./ec2"
+  depends_on = [module.s3bucket]
+  
 }
 
-
-
-# resource "aws_s3_bucket" "abc1" {
-#     bucket = "jatin1234112121"
-# }
-
-
-
-# resource "aws_ec2_instance" "my_ec2" {
-#   ami           = data.aws_ami.ubuntu.id
-#   instance_type = "t2.micro"
-# }
+module "securitygroup" {
+  source = "./securitygroup"
+  sg_name = var.sg_name
+}

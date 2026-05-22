@@ -7,3 +7,8 @@ variable bucket_name {
 #     default = true
 #     description = "Set to true to create S3 bucket, false to skip"
 # }
+
+variable "sg_name" {
+  description = "Name of the security group"
+  type        = string
+}
