@@ -7,10 +7,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run a one-line script
-        run: echo how are you ?
+      - name: create a directory
+        run: mkdir jatin
+       
 
-      - name: Run a multi-line script
-        run: |
-          echo i am fine, thank you for asking.
+      - name: create a file
+        run: cd jatin && touch hello.txt
+        
          
