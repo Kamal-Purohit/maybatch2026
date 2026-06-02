@@ -19,3 +19,6 @@ step4: sudo apt install jenkins
 steps5: sudo systemctl start Jenkins
 
 step6: sudo systemctl status jenkins
+
+
+https://www.jenkins.io/doc/book/installing/linux/
