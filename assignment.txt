@@ -76,3 +76,13 @@ terraform apply
 
 
 my pipeline should stop/pause between the plan and apply stage and ask for my manual approval
+
+
+5th june
+create a ansible playbook and add below task
+
+install apache on the target machine
+
+create a html file on the main machine then using the ansible playbook copy the html content on  the target machine
+
+then hit ip address of the target machine from browser and see if you get the html page 
